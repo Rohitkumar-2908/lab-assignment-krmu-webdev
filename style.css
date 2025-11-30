@@ -1,0 +1,238 @@
+/* -------------------- GENERAL RESET -------------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f4f4f4;
+}
+
+/* -------------------- NAVBAR -------------------- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: #ffffff;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+.navbar nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #444;
+    font-size: 16px;
+}
+
+.navbar nav a:hover {
+    color: #0078ff;
+}
+
+/* -------------------- HERO SECTION -------------------- */
+.hero {
+    height: 70vh;
+    background-image: url("https://img.staticmb.com/mbcontent/images/crop/uploads/2025/6/house-vs-home_0_1200.jpg.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: rgb(0, 0, 0);
+    text-shadow: 0px 2px 6px rgba(0,0,0,0.7);
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+}
+
+/* -------------------- SEARCH BOX -------------------- */
+.search-box {
+    background: white;
+    width: 80%;
+    margin: -40px auto 40px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.1);
+}
+
+.search-box form {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.search-box input,
+.search-box select {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-box button {
+    padding: 12px 25px;
+    border: none;
+    background: #0078ff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background: #005fd4;
+}
+
+/* -------------------- PROPERTY LISTINGS -------------------- */
+.listings {
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.listings h2 {
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+    padding-bottom: 15px;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card h3 {
+    margin: 15px 0 5px 0;
+    font-size: 20px;
+}
+
+.card p {
+    color: #444;
+}
+
+/* -------------------- AGENTS SECTION -------------------- */
+.agents {
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.agent-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.1);
+}
+
+.agent-card img {
+    width: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* -------------------- CONTACT FORM -------------------- */
+.contact {
+    width: 70%;
+    margin: auto;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    margin: 8px 0;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    margin-top: 10px;
+    padding: 12px 20px;
+    background: #0078ff;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background: #005fd4;
+}
+
+/* -------------------- FOOTER -------------------- */
+.footer {
+    background: #222;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    margin-top: 40px;
+}
+
+/* -------------------- CARD HOVER EFFECTS -------------------- */
+
+/* Property Cards */
+.card {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+    transform: scale(1.04);
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Agent Cards */
+.agent-card {
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.agent-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* Agent image hover (optional cute effect) */
+.agent-card img {
+    transition: transform 0.25s ease;
+}
+
+.agent-card:hover img {
+    transform: scale(1.08);
+}
